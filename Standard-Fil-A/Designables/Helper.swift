@@ -9,6 +9,15 @@
 import Foundation
 import UIKit
 
+var userOrder = [Item]()
+var totalPrice = Double()
+
+
+class Helper {
+    
+
+}
+
 extension UIApplication {
     class func topViewController(controller: UIViewController? = UIApplication.shared.keyWindow?.rootViewController) -> UIViewController? {
         if let tabController = controller as? UITabBarController {
@@ -21,5 +30,15 @@ extension UIApplication {
             return topViewController(controller: presented)
         }
         return controller
+    }
+    
+    
+    
+}
+
+extension UITableView {
+    func indexPathForView(view: AnyObject) -> NSIndexPath? {
+        let originInTableView = self.convert(CGPoint(), from: (view as! UIView))
+        return self.indexPathForRow(at: originInTableView) as NSIndexPath?
     }
 }

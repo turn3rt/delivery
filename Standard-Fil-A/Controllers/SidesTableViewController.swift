@@ -9,43 +9,68 @@
 import UIKit
 
 class SidesTableViewController: UITableViewController {
+    
+    var rootItem = Item(name: String(),
+                        image: UIImage(),
+                        price: Double())
 
+    //let menuItemsHelper = MenuItems()
+
+    
+    var menuItemLabels = [String]()
+    var menuItemImages = [UIImage]()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem
+  
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
+  
     // MARK: - Table view data source
 
     override func numberOfSections(in tableView: UITableView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
-        return 0
+        return 1
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
-        return 0
+        return menuItemLabels.count
     }
-
-    /*
+    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
-
-        // Configure the cell...
-
+        let cell = tableView.dequeueReusableCell(withIdentifier: "sideItemCell", for: indexPath) as! SideItemCell
+        
+        cell.itemName.text = menuItemLabels[indexPath.row]
+        cell.itemImage.image = menuItemImages[indexPath.row]
+        
+        
         return cell
     }
-    */
+    
+    
+    
+    
+    @IBAction func addToOrderClick(_ sender: UIButtonX) {
+        let itemIndex = self.tableView.indexPathForView(view: sender as AnyObject)!
+        
+        let selectedSide = Item(name: self.menuItemLabels[itemIndex.row],
+                                image: self.menuItemImages[itemIndex.row],
+                                price: 5.00)
+        userOrder.append(rootItem) // appends root item without sides
+        userOrder.append(selectedSide)// appends the side itself
+        totalPrice += (rootItem.price + selectedSide.price)
+        self.navigationController?.popToRootViewController(animated: true)
+        print(userOrder)
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
 
     /*
     // Override to support conditional editing of the table view.
@@ -79,17 +104,28 @@ class SidesTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, canMoveRowAt indexPath: IndexPath) -> Bool {
         // Return false if you do not want the item to be re-orderable.
         return true
-    }
-    */
-
-    /*
+     }
+     */
+    
+    
     // MARK: - Navigation
-
+    
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
+        if segue.identifier == "addedSideItem" {
+            let itemIndex = self.tableView.indexPathForView(view: sender as AnyObject)!
+            
+            let selectedSide = Item(name: self.menuItemLabels[itemIndex.row],
+                                    image: self.menuItemImages[itemIndex.row],
+                                    price: 5.00)
+            userOrder.append(rootItem) // appends root item without sides
+            userOrder.append(selectedSide) // appends the side itself
+            
+        }
+        
+        
+    
 
+    }
+        
 }

@@ -10,15 +10,17 @@ import UIKit
 
 class SideItemCell: UITableViewCell {
 
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
+    @IBOutlet weak var itemName: UILabel!
+    @IBOutlet weak var itemImage: UIImageView!
+    
+    
+    
+    @IBAction func addToOrderClick(_ sender: UIButtonX) {
+        
+        
+        
+        
     }
-
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
-    }
+    
 
 }
