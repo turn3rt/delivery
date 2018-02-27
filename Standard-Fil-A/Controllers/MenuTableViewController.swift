@@ -13,8 +13,8 @@ class MenuTableViewController: UITableViewController {
     let menuItemsHelper = MenuItems()
 
     
-    var menuItemLabels = [String]()
-    var menuItemImages = [UIImage]()
+    var menuItemLabels = [String]() //these get passed the data from CatagorySelectVC
+    var menuItemImages = [UIImage]() //from the prepareForSegue method in CatagorySelectVC, so they know what to populate the menu items with
     
     
     override func viewDidLoad() {
@@ -57,30 +57,22 @@ class MenuTableViewController: UITableViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
         if segue.identifier == "addedItem" {
-            
-//            let selectedCellIndex = self.tableView.indexPathForSelectedRow!.row
-//            let selectedItem = Item(name:  menuItemLabels[selectedCellIndex],
-//                            image: menuItemImages[selectedCellIndex],
-//                            price: 5.00)
-//
-//            userOrder.append(selectedItem)
 
-            
-            
-            let menuDetailVC = segue.destination as! SidesTableViewController
-            let rootItemIndex = self.tableView.indexPathForView(view: sender as AnyObject)!
-            let selectedItem = Item(name: self.menuItemLabels[rootItemIndex.row],
+            let menuDetailVC = segue.destination as! SidesTableViewController //tells segue where it's "going"
+            let rootItemIndex = self.tableView.indexPathForView(view: sender as AnyObject)! //gets index path of tableViewCell that segue button was on
+            let selectedItem = Item(name: self.menuItemLabels[rootItemIndex.row],  //creates new item, with properties that the user selects
                                     image: self.menuItemImages[rootItemIndex.row],
                                     price: 5.00)
-            menuDetailVC.rootItem = selectedItem
+            menuDetailVC.rootItem = selectedItem //makes root item in Menu DetailVC whwat they just picked
             
-                menuDetailVC.menuItemLabels = menuItemsHelper.sideItemLables
-                var menuImages = [UIImage]()
+            menuDetailVC.menuItemLabels = menuItemsHelper.sideItemLables //passes the array of side item names to menuImages var in sidesTableVC
+            
+                var menuImages = [UIImage]() //passes side item images to sideTableVC
                 for i in 1...menuItemsHelper.sideItemLables.count {
                     let image = UIImage(named: "\(i)_Sides.png")
                     menuImages.append(image!)
                 }
-                menuDetailVC.menuItemImages = menuImages
+                menuDetailVC.menuItemImages = menuImages //passes the array of side item images to menuImages var in sidesTableVC
             
         }
     }

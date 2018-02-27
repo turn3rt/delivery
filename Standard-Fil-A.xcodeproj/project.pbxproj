@@ -42,6 +42,7 @@
 		B310FBD9203387D000EB4A12 /* 7_Sides.png in Resources */ = {isa = PBXBuildFile; fileRef = B310FBD2203387CF00EB4A12 /* 7_Sides.png */; };
 		B310FBDB20338FC200EB4A12 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = B310FBDA20338FC200EB4A12 /* Item.swift */; };
 		B310FBDD203399DB00EB4A12 /* SideItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B310FBDC203399DB00EB4A12 /* SideItemCell.swift */; };
+		B33C9EA52040DA8700A74020 /* DrinksTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B33C9EA42040DA8700A74020 /* DrinksTableViewController.swift */; };
 		B3568F702011A23F00F24AD2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3568F6F2011A23F00F24AD2 /* AppDelegate.swift */; };
 		B3568F722011A23F00F24AD2 /* CatagorySelectTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3568F712011A23F00F24AD2 /* CatagorySelectTableViewController.swift */; };
 		B3568F752011A23F00F24AD2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B3568F732011A23F00F24AD2 /* Main.storyboard */; };
@@ -151,6 +152,7 @@
 		B310FBD2203387CF00EB4A12 /* 7_Sides.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 7_Sides.png; sourceTree = "<group>"; };
 		B310FBDA20338FC200EB4A12 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		B310FBDC203399DB00EB4A12 /* SideItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideItemCell.swift; sourceTree = "<group>"; };
+		B33C9EA42040DA8700A74020 /* DrinksTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinksTableViewController.swift; sourceTree = "<group>"; };
 		B3568F6C2011A23F00F24AD2 /* Standard-Fil-A.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Standard-Fil-A.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3568F6F2011A23F00F24AD2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B3568F712011A23F00F24AD2 /* CatagorySelectTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatagorySelectTableViewController.swift; sourceTree = "<group>"; };
@@ -354,6 +356,7 @@
 			children = (
 				B3568F712011A23F00F24AD2 /* CatagorySelectTableViewController.swift */,
 				B3568F862011A38100F24AD2 /* MenuTableViewController.swift */,
+				B33C9EA42040DA8700A74020 /* DrinksTableViewController.swift */,
 				B310FBC92033868F00EB4A12 /* SidesTableViewController.swift */,
 			);
 			path = Controllers;
@@ -630,6 +633,7 @@
 			files = (
 				B3568F722011A23F00F24AD2 /* CatagorySelectTableViewController.swift in Sources */,
 				B3568F782011A23F00F24AD2 /* Standard_Fil_A.xcdatamodeld in Sources */,
+				B33C9EA52040DA8700A74020 /* DrinksTableViewController.swift in Sources */,
 				B3568F702011A23F00F24AD2 /* AppDelegate.swift in Sources */,
 				B3B5E4302033C0B700EA5052 /* OrderItemCell.swift in Sources */,
 				B3568F892011A6C500F24AD2 /* MenuItemCell.swift in Sources */,

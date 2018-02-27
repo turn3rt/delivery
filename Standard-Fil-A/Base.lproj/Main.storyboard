@@ -266,7 +266,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="28L-tX-PDL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2740" y="-496"/>
+            <point key="canvasLocation" x="2740" y="-553"/>
         </scene>
         <!--$69.50-->
         <scene sceneID="L7Q-Sp-A87">
@@ -437,7 +437,7 @@
                                             </view>
                                             <blurEffect style="light"/>
                                         </visualEffectView>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Chicken Sandwich" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="c4I-76-iEt">
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Some Side BEEF" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="c4I-76-iEt">
                                             <rect key="frame" x="16" y="19" width="215" height="112"/>
                                             <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="36"/>
                                             <nil key="highlightedColor"/>
@@ -469,6 +469,7 @@
                                             </userDefinedRuntimeAttributes>
                                             <connections>
                                                 <action selector="addToOrderClick:" destination="Din-fr-YHT" eventType="touchUpInside" id="tED-Yt-gQO"/>
+                                                <segue destination="jvm-Gn-rnf" kind="show" identifier="addedSideItem" id="diK-BQ-zu6"/>
                                             </connections>
                                         </button>
                                     </subviews>
@@ -493,7 +494,6 @@
                                 <connections>
                                     <outlet property="itemImage" destination="CI2-Zf-98A" id="MLX-ic-oh6"/>
                                     <outlet property="itemName" destination="c4I-76-iEt" id="Icv-5j-CkN"/>
-                                    <segue destination="9KU-GS-IDn" kind="show" id="GSY-t4-P4q"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -514,6 +514,110 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YTg-xp-G6J" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1976.8" y="142.61083743842366"/>
+        </scene>
+        <!--Drinks-->
+        <scene sceneID="AYs-3Z-qa0">
+            <objects>
+                <tableViewController id="jvm-Gn-rnf" customClass="DrinksTableViewController" customModule="Standard_Fil_A" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="yjd-eD-tT2">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="drinkItemCell" rowHeight="150" id="uSh-w6-dQB" customClass="SideItemCell" customModule="Standard_Fil_A" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="375" height="150"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="uSh-w6-dQB" id="45P-hZ-xL5">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="149.66666666666666"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="1_Entree.png" translatesAutoresizingMaskIntoConstraints="NO" id="djO-0o-Nan">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="150"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="150" id="pMd-kR-2qy"/>
+                                            </constraints>
+                                        </imageView>
+                                        <visualEffectView opaque="NO" alpha="0.34999999403953552" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="M9s-71-I5L">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="150"/>
+                                            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="x8Y-Xw-wTk">
+                                                <rect key="frame" x="0.0" y="0.0" width="375" height="150"/>
+                                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                            </view>
+                                            <blurEffect style="light"/>
+                                        </visualEffectView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Some Drink Yeah" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="XUu-5C-jav">
+                                            <rect key="frame" x="16" y="19" width="215" height="112"/>
+                                            <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="36"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y68-f5-KMJ" customClass="UIButtonX" customModule="Standard_Fil_A" customModuleProvider="target">
+                                            <rect key="frame" x="239" y="58" width="120" height="34"/>
+                                            <color key="backgroundColor" red="0.82359302040000004" green="0.20729005340000001" blue="0.2430278659" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="34" id="9i4-6Q-zwP"/>
+                                                <constraint firstAttribute="width" constant="120" id="KEq-Wl-cfN"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="16"/>
+                                            <state key="normal" title="Add (+$0.99)">
+                                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </state>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                                    <real key="value" value="1"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                                                    <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
+                                                    <real key="value" value="1"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                    <real key="value" value="16"/>
+                                                </userDefinedRuntimeAttribute>
+                                            </userDefinedRuntimeAttributes>
+                                            <connections>
+                                                <action selector="addItemClick:" destination="jvm-Gn-rnf" eventType="touchUpInside" id="GQq-tf-3Y4"/>
+                                            </connections>
+                                        </button>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="bottom" secondItem="M9s-71-I5L" secondAttribute="bottom" id="2CR-fd-EhQ"/>
+                                        <constraint firstItem="djO-0o-Nan" firstAttribute="top" secondItem="45P-hZ-xL5" secondAttribute="top" id="4WW-N4-o0Z"/>
+                                        <constraint firstAttribute="trailing" secondItem="djO-0o-Nan" secondAttribute="trailing" id="C6q-HS-Qj6"/>
+                                        <constraint firstItem="XUu-5C-jav" firstAttribute="top" secondItem="45P-hZ-xL5" secondAttribute="topMargin" constant="8" id="CgS-h6-pi9"/>
+                                        <constraint firstAttribute="trailing" secondItem="M9s-71-I5L" secondAttribute="trailing" id="FcV-y3-lnF"/>
+                                        <constraint firstAttribute="bottom" secondItem="djO-0o-Nan" secondAttribute="bottom" constant="-0.33000000000000002" id="ICz-iX-vcU"/>
+                                        <constraint firstItem="y68-f5-KMJ" firstAttribute="trailing" secondItem="45P-hZ-xL5" secondAttribute="trailingMargin" id="M1e-xL-ewC"/>
+                                        <constraint firstItem="y68-f5-KMJ" firstAttribute="leading" secondItem="XUu-5C-jav" secondAttribute="trailing" constant="8" id="POB-OL-2Li"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="XUu-5C-jav" secondAttribute="bottom" constant="8" id="PYo-VQ-m9W"/>
+                                        <constraint firstItem="M9s-71-I5L" firstAttribute="leading" secondItem="45P-hZ-xL5" secondAttribute="leading" id="eKR-ty-Xge"/>
+                                        <constraint firstItem="djO-0o-Nan" firstAttribute="leading" secondItem="45P-hZ-xL5" secondAttribute="leading" id="he2-Jo-27i"/>
+                                        <constraint firstItem="y68-f5-KMJ" firstAttribute="centerY" secondItem="45P-hZ-xL5" secondAttribute="centerY" id="qFa-Co-f1X"/>
+                                        <constraint firstItem="M9s-71-I5L" firstAttribute="top" secondItem="45P-hZ-xL5" secondAttribute="top" id="rgV-A7-1ku"/>
+                                        <constraint firstItem="XUu-5C-jav" firstAttribute="leading" secondItem="45P-hZ-xL5" secondAttribute="leadingMargin" id="xYg-TI-yf0"/>
+                                        <constraint firstItem="XUu-5C-jav" firstAttribute="centerY" secondItem="45P-hZ-xL5" secondAttribute="centerY" id="xnS-va-HMx"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="itemImage" destination="djO-0o-Nan" id="7ub-fU-QwR"/>
+                                    <outlet property="itemName" destination="XUu-5C-jav" id="3Q1-v3-kmd"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="jvm-Gn-rnf" id="Tm7-5z-C9d"/>
+                            <outlet property="delegate" destination="jvm-Gn-rnf" id="SkW-L4-2Do"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Drinks" id="M7V-kw-mZr">
+                        <barButtonItem key="rightBarButtonItem" image="FatBitchBin.png" id="Ifj-S1-HQR">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </barButtonItem>
+                    </navigationItem>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="slU-9f-eHG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2740" y="143"/>
         </scene>
         <!--Review Order-->
         <scene sceneID="y9G-7G-70L">
@@ -743,7 +847,6 @@
         <image name="chikfilbuns3.png" width="176" height="273"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="Vsv-VM-fDB"/>
-        <segue reference="Xf7-q7-GIO"/>
+        <segue reference="TxM-Vl-1Ao"/>
     </inferredMetricsTieBreakers>
 </document>

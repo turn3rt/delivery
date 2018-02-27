@@ -14,7 +14,7 @@ class SidesTableViewController: UITableViewController {
                         image: UIImage(),
                         price: Double())
 
-    //let menuItemsHelper = MenuItems()
+    let menuItemsHelper = MenuItems()
 
     
     var menuItemLabels = [String]()
@@ -51,16 +51,16 @@ class SidesTableViewController: UITableViewController {
     
     
     @IBAction func addToOrderClick(_ sender: UIButtonX) {
-        let itemIndex = self.tableView.indexPathForView(view: sender as AnyObject)!
-        
-        let selectedSide = Item(name: self.menuItemLabels[itemIndex.row],
-                                image: self.menuItemImages[itemIndex.row],
-                                price: 5.00)
-        userOrder.append(rootItem) // appends root item without sides
-        userOrder.append(selectedSide)// appends the side itself
-        totalPrice += (rootItem.price + selectedSide.price)
-        self.navigationController?.popToRootViewController(animated: true)
-        print(userOrder)
+//        let itemIndex = self.tableView.indexPathForView(view: sender as AnyObject)!
+//
+//        let selectedSide = Item(name: self.menuItemLabels[itemIndex.row],
+//                                image: self.menuItemImages[itemIndex.row],
+//                                price: 5.00)
+//        userOrder.append(rootItem) // appends root item without sides
+//        userOrder.append(selectedSide)// appends the side itself
+//        totalPrice += (rootItem.price + selectedSide.price)
+////        self.navigationController?.popToRootViewController(animated: true)
+//        print(userOrder)
     }
     
     
@@ -113,6 +113,14 @@ class SidesTableViewController: UITableViewController {
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "addedSideItem" {
+            let drinksVC = segue.destination as! DrinksTableViewController // tells segue where it's going
+            
+            drinksVC.drinkNames = menuItemsHelper.drinkItemLables //appends drink item labels to DrinkVC
+            for i in 1...menuItemsHelper.drinkItemLables.count { //appends images to DrinkVC
+                let image = UIImage(named: "\(i)_drinks.png")
+                drinksVC.drinkImages.append(image!)
+            }
+            
             let itemIndex = self.tableView.indexPathForView(view: sender as AnyObject)!
             
             let selectedSide = Item(name: self.menuItemLabels[itemIndex.row],
@@ -121,11 +129,35 @@ class SidesTableViewController: UITableViewController {
             userOrder.append(rootItem) // appends root item without sides
             userOrder.append(selectedSide) // appends the side itself
             
+            totalPrice += (rootItem.price + selectedSide.price) //updates total price to reflect root item and side
+            print("total price is: \(totalPrice)")
+            print("user order is: \(userOrder)")
+
+            
+            
         }
         
         
     
 
     }
-        
+    
+    
+    
+//    let menuDetailVC = segue.destination as! SidesTableViewController //tells segue where it's "going"
+//    let rootItemIndex = self.tableView.indexPathForView(view: sender as AnyObject)!
+//    let selectedItem = Item(name: self.menuItemLabels[rootItemIndex.row],  //creates new item, with properties that the user selects
+//        image: self.menuItemImages[rootItemIndex.row],
+//        price: 5.00)
+//    menuDetailVC.rootItem = selectedItem //makes root item in Menu DetailVC whwat they just picked
+//
+//    menuDetailVC.menuItemLabels = menuItemsHelper.sideItemLables //passes the array of side item names to menuImages var in sidesTableVC
+//
+//    var menuImages = [UIImage]()
+//    for i in 1...menuItemsHelper.sideItemLables.count {
+//    let image = UIImage(named: "\(i)_Sides.png")
+//    menuImages.append(image!)
+//    }
+//    menuDetailVC.menuItemImages = menuImages //passes the array of side item images to menuImages var in sidesTableVC
+    
 }
