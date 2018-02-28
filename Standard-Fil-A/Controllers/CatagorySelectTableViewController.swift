@@ -69,13 +69,12 @@ class CatagorySelectTableViewController: UITableViewController {
         //self.navigationController?.title = "$" + String(describing: totalPrice)
     }
     
-    
+    //MARK: Table View Delegate Methods
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "catagoryCell", for: indexPath) as! CatagoryCell
         
         cell.catagoryName.text = menuCatagories[indexPath.row]
         cell.catagoryImage.image = menuIcons[indexPath.row]
-        
         
         return cell
     }
@@ -84,12 +83,13 @@ class CatagorySelectTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         let cell = tableView.dequeueReusableCell(withIdentifier: "welcomeHeader") as! HeaderCell
         
-        cell.headerLabel.text = "Welcome, username, select a menu catagory below..."
+        cell.headerLabel.text = "Welcome Turner, select a menu catagory below..."
         
         return cell
 
     }
     
+    //MARK: Prepare for Segue stuff
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
 
         if segue.identifier == "selectedCatagory" {
@@ -100,7 +100,7 @@ class CatagorySelectTableViewController: UITableViewController {
             
             
             switch selectedCellIndex {
-            case 0: //breakfast
+            case 0: //Breakfast
                 menuDetailVC.menuItemLabels = menuItemsHelper.breakfastItemLabels
                 var menuImages = [UIImage]()
                 for i in 1...menuItemsHelper.breakfastItemLabels.count {
@@ -117,6 +117,7 @@ class CatagorySelectTableViewController: UITableViewController {
                     menuImages.append(image!)
                 }
                 menuDetailVC.menuItemImages = menuImages
+                
             case 2: // Salads
                 menuDetailVC.menuItemLabels = menuItemsHelper.saladItemLabels
                 var menuImages = [UIImage]()
@@ -125,6 +126,7 @@ class CatagorySelectTableViewController: UITableViewController {
                     menuImages.append(image!)
                 }
                 menuDetailVC.menuItemImages = menuImages
+                
             case 3: // Sides
                 menuDetailVC.menuItemLabels = menuItemsHelper.sideItemLables
                 var menuImages = [UIImage]()

@@ -115,6 +115,148 @@
             <point key="canvasLocation" x="461.60000000000002" y="142.61083743842366"/>
         </scene>
         <!--View Controller-->
+        <scene sceneID="BOG-a7-JG9">
+            <objects>
+                <viewController id="tgG-Qk-Lse" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Val-yf-cVv">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Humphreys-Partners-Architects-The-Standard-at-Gainesville-Exterior-Target-nltr365m2yr3qgyf1gj5sb5v6681765x8la1twt4hs.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="2W4-Jg-nuh">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                            </imageView>
+                            <visualEffectView opaque="NO" alpha="0.45000000000000001" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="f2t-6z-Df3">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" insetsLayoutMarginsFromSafeArea="NO" id="xap-47-oA5">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                </view>
+                                <color key="backgroundColor" red="0.0" green="0.58823529409999997" blue="0.53333333329999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <blurEffect style="dark"/>
+                            </visualEffectView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select Restaurant" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="cnf-Xe-FSg">
+                                <rect key="frame" x="40" y="68" width="295" height="82.333333333333314"/>
+                                <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="36"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <size key="shadowOffset" width="0.0" height="1"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="64" translatesAutoresizingMaskIntoConstraints="NO" id="x7o-no-O6X">
+                                <rect key="frame" x="24" y="164" width="327" height="524"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w1V-NX-dxa" customClass="UIButtonX" customModule="Standard_Fil_A" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="327" height="132"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" image="1280px-Chick-fil-A_Logo.svg.png">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                                <real key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                                                <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
+                                                <real key="value" value="10"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="24"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" red="1" green="0.3411764706" blue="0.1333333333" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="0.0"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <segue destination="6mn-76-Y3c" kind="show" id="3Qz-yR-Zcc"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Atb-9w-sat" customClass="UIButtonX" customModule="Standard_Fil_A" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="196" width="327" height="132"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" image="10995296_1713929518849797_2991002194800892706_n.0.0.png.jpeg">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                                <real key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                                                <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
+                                                <real key="value" value="10"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="24"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" red="1" green="0.3411764706" blue="0.1333333333" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="0.0"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vMk-5G-oD3" customClass="UIButtonX" customModule="Standard_Fil_A" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="392" width="327" height="132"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" image="2016_TacoBellLogo_HorizontalCenter_Clr_Rev.0.png">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                                <real key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                                                <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
+                                                <real key="value" value="10"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="24"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" red="1" green="0.3411764706" blue="0.1333333333" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="0.0"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="x7o-no-O6X" secondAttribute="bottom" constant="124" id="2L7-a8-vLw"/>
+                            <constraint firstAttribute="trailing" secondItem="x7o-no-O6X" secondAttribute="trailing" constant="24" id="8i6-FG-wgI"/>
+                            <constraint firstAttribute="bottom" secondItem="2W4-Jg-nuh" secondAttribute="bottom" id="9Dc-6O-NUY"/>
+                            <constraint firstItem="x7o-no-O6X" firstAttribute="centerY" secondItem="Val-yf-cVv" secondAttribute="centerY" constant="20" id="AKW-Jd-Ufb"/>
+                            <constraint firstItem="2W4-Jg-nuh" firstAttribute="leading" secondItem="1ix-bv-Ajj" secondAttribute="leading" id="JaT-7N-lzY"/>
+                            <constraint firstItem="x7o-no-O6X" firstAttribute="centerX" secondItem="Val-yf-cVv" secondAttribute="centerX" id="KiG-Fi-fnm"/>
+                            <constraint firstItem="cnf-Xe-FSg" firstAttribute="leading" secondItem="1ix-bv-Ajj" secondAttribute="leading" constant="40" id="MII-CQ-UVZ"/>
+                            <constraint firstItem="w1V-NX-dxa" firstAttribute="top" secondItem="cnf-Xe-FSg" secondAttribute="bottom" constant="13.666666666666657" id="cd2-7q-651"/>
+                            <constraint firstItem="cnf-Xe-FSg" firstAttribute="top" secondItem="1ix-bv-Ajj" secondAttribute="top" constant="24" id="e0v-F6-g0w"/>
+                            <constraint firstItem="x7o-no-O6X" firstAttribute="leading" secondItem="Val-yf-cVv" secondAttribute="leading" constant="24" id="fpO-Wb-Osq"/>
+                            <constraint firstItem="2W4-Jg-nuh" firstAttribute="trailing" secondItem="1ix-bv-Ajj" secondAttribute="trailing" id="iIu-jf-8oi"/>
+                            <constraint firstItem="1ix-bv-Ajj" firstAttribute="trailing" secondItem="cnf-Xe-FSg" secondAttribute="trailing" constant="40" id="m65-0O-R26"/>
+                            <constraint firstItem="2W4-Jg-nuh" firstAttribute="top" secondItem="Val-yf-cVv" secondAttribute="top" id="rda-3y-5M1"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="1ix-bv-Ajj"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8Jg-XC-HZo" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1052" y="142.61083743842366"/>
+        </scene>
+        <!--View Controller-->
         <scene sceneID="yQD-8X-lBR">
             <objects>
                 <viewController id="Tfh-3B-VUb" sceneMemberID="viewController">
@@ -122,6 +264,18 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Humphreys-Partners-Architects-The-Standard-at-Gainesville-Exterior-Target-nltr365m2yr3qgyf1gj5sb5v6681765x8la1twt4hs.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="7gd-GB-a8X">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                            </imageView>
+                            <visualEffectView opaque="NO" alpha="0.44999998807907104" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SvB-o1-N4E">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="JLC-8z-fjG">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                </view>
+                                <color key="backgroundColor" red="0.0" green="0.58823529409999997" blue="0.53333333329999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <blurEffect style="dark"/>
+                            </visualEffectView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="chikfilbuns3.png" translatesAutoresizingMaskIntoConstraints="NO" id="Xh5-uP-i6c" customClass="UIImageViewX" customModule="Standard_Fil_A" customModuleProvider="target">
                                 <rect key="frame" x="112" y="108" width="150" height="190"/>
                                 <constraints>
@@ -179,14 +333,14 @@
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="asP-qS-Tbb" customClass="UIButtonX" customModule="Standard_Fil_A" customModuleProvider="target">
                                 <rect key="frame" x="56" y="564" width="262" height="45"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="backgroundColor" red="1" green="0.3411764705882353" blue="0.13333333333333333" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="262" id="eew-se-l9j"/>
                                     <constraint firstAttribute="height" constant="45" id="vPl-86-y1X"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="24"/>
                                 <state key="normal" title="Login">
-                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
@@ -209,25 +363,33 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <segue destination="6mn-76-Y3c" kind="show" id="B5d-ME-kBU"/>
+                                    <segue destination="tgG-Qk-Lse" kind="show" id="bMk-e6-Jhd"/>
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" red="0.82359302040000004" green="0.20729005340000001" blue="0.2430278659" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstAttribute="bottom" secondItem="SvB-o1-N4E" secondAttribute="bottom" id="5fY-zY-Vf6"/>
+                            <constraint firstItem="SvB-o1-N4E" firstAttribute="leading" secondItem="HZG-3d-EuY" secondAttribute="leading" id="LwG-wl-f7E"/>
                             <constraint firstItem="asP-qS-Tbb" firstAttribute="top" secondItem="oaA-1B-EdH" secondAttribute="bottom" constant="80" id="Ndu-Za-aL8"/>
+                            <constraint firstItem="SvB-o1-N4E" firstAttribute="top" secondItem="3Ls-aR-xZA" secondAttribute="top" id="WdW-nB-fq6"/>
+                            <constraint firstItem="7gd-GB-a8X" firstAttribute="top" secondItem="3Ls-aR-xZA" secondAttribute="top" id="a12-xb-xXp"/>
                             <constraint firstItem="oaA-1B-EdH" firstAttribute="centerY" secondItem="3Ls-aR-xZA" secondAttribute="centerY" constant="24" id="dzb-F2-1td"/>
                             <constraint firstItem="Xh5-uP-i6c" firstAttribute="centerX" secondItem="3Ls-aR-xZA" secondAttribute="centerX" id="gd7-be-mVq"/>
                             <constraint firstItem="Xh5-uP-i6c" firstAttribute="top" secondItem="HZG-3d-EuY" secondAttribute="top" constant="64" id="hiV-NE-gpc"/>
                             <constraint firstItem="asP-qS-Tbb" firstAttribute="centerX" secondItem="3Ls-aR-xZA" secondAttribute="centerX" id="kuT-Wq-NLf"/>
+                            <constraint firstItem="7gd-GB-a8X" firstAttribute="trailing" secondItem="HZG-3d-EuY" secondAttribute="trailing" id="lWt-98-e7q"/>
                             <constraint firstItem="oaA-1B-EdH" firstAttribute="centerX" secondItem="3Ls-aR-xZA" secondAttribute="centerX" id="lxy-ba-W9L"/>
+                            <constraint firstItem="7gd-GB-a8X" firstAttribute="leading" secondItem="HZG-3d-EuY" secondAttribute="leading" id="mOR-Or-DuB"/>
+                            <constraint firstAttribute="bottom" secondItem="7gd-GB-a8X" secondAttribute="bottom" id="nVy-VH-opy"/>
+                            <constraint firstAttribute="trailing" secondItem="SvB-o1-N4E" secondAttribute="trailing" id="snZ-K4-hI9"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="HZG-3d-EuY"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="g03-la-nrl" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1058.4000000000001" y="142.61083743842366"/>
+            <point key="canvasLocation" x="-1895.2" y="142.61083743842366"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="3PN-yO-su0">
@@ -250,7 +412,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AEr-81-Y9k" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-281" y="143"/>
+            <point key="canvasLocation" x="-294" y="143"/>
         </scene>
         <!--Nutrition Info-->
         <scene sceneID="eID-c0-4yc">
@@ -791,7 +953,7 @@
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
                                 </userDefinedRuntimeAttributes>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g35-U1-My9" customClass="UIButtonX" customModule="Standard_Fil_A" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g35-U1-My9" customClass="UIButtonX" customModule="Standard_Fil_A" customModuleProvider="target">
                                 <rect key="frame" x="56" y="531" width="262" height="45"/>
                                 <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
@@ -826,6 +988,7 @@
                         </subviews>
                         <color key="backgroundColor" red="0.82359302040000004" green="0.20729005340000001" blue="0.2430278659" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
+                            <constraint firstItem="g35-U1-My9" firstAttribute="top" secondItem="qiT-Kc-sYv" secondAttribute="bottom" constant="104" id="4W7-Ef-2Mn"/>
                             <constraint firstItem="g35-U1-My9" firstAttribute="centerX" secondItem="6Dg-9Y-T55" secondAttribute="centerX" id="95s-P4-EpU"/>
                             <constraint firstItem="pbx-gH-IQE" firstAttribute="centerX" secondItem="6Dg-9Y-T55" secondAttribute="centerX" id="GQm-AS-Tyt"/>
                             <constraint firstItem="qiT-Kc-sYv" firstAttribute="centerY" secondItem="6Dg-9Y-T55" secondAttribute="centerY" id="RwJ-Su-lhU"/>
@@ -841,8 +1004,12 @@
         </scene>
     </scenes>
     <resources>
+        <image name="10995296_1713929518849797_2991002194800892706_n.0.0.png.jpeg" width="1200" height="800"/>
+        <image name="1280px-Chick-fil-A_Logo.svg.png" width="1280" height="578"/>
         <image name="1_Entree.png" width="1027" height="539"/>
+        <image name="2016_TacoBellLogo_HorizontalCenter_Clr_Rev.0.png" width="1008" height="221"/>
         <image name="FatBitchBin.png" width="32" height="32"/>
+        <image name="Humphreys-Partners-Architects-The-Standard-at-Gainesville-Exterior-Target-nltr365m2yr3qgyf1gj5sb5v6681765x8la1twt4hs.jpg" width="1280" height="1130"/>
         <image name="Screen Shot 2018-01-19 at 1.27.31 AM.png" width="2556" height="1662"/>
         <image name="chikfilbuns3.png" width="176" height="273"/>
     </resources>

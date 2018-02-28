@@ -114,6 +114,11 @@
 		B3B5E4322033CB5500EA5052 /* chikfilbuns3@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B3B5E4312033CB5400EA5052 /* chikfilbuns3@2x.png */; };
 		B3BE99EA2011C78C00A6E7BB /* Screen Shot 2018-01-19 at 1.27.31 AM.png in Resources */ = {isa = PBXBuildFile; fileRef = B3BE99E92011C78C00A6E7BB /* Screen Shot 2018-01-19 at 1.27.31 AM.png */; };
 		B3C0EC512019952E00AD8904 /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3C0EC502019952E00AD8904 /* Helper.swift */; };
+		B3CC3E4F204727B6006B13F8 /* 2016_TacoBellLogo_HorizontalCenter_Clr_Rev.0.png in Resources */ = {isa = PBXBuildFile; fileRef = B3CC3E4C204727B3006B13F8 /* 2016_TacoBellLogo_HorizontalCenter_Clr_Rev.0.png */; };
+		B3CC3E50204727B6006B13F8 /* 10995296_1713929518849797_2991002194800892706_n.0.0.png.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = B3CC3E4D204727B5006B13F8 /* 10995296_1713929518849797_2991002194800892706_n.0.0.png.jpeg */; };
+		B3CC3E51204727B6006B13F8 /* Unknown in Resources */ = {isa = PBXBuildFile; fileRef = B3CC3E4E204727B6006B13F8 /* Unknown */; };
+		B3D1CD522047239C0047BA48 /* Humphreys-Partners-Architects-The-Standard-at-Gainesville-Exterior-Target-nltr365m2yr3qgyf1gj5sb5v6681765x8la1twt4hs.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B3D1CD512047239B0047BA48 /* Humphreys-Partners-Architects-The-Standard-at-Gainesville-Exterior-Target-nltr365m2yr3qgyf1gj5sb5v6681765x8la1twt4hs.jpg */; };
+		B3D1CD54204725130047BA48 /* 1280px-Chick-fil-A_Logo.svg.png in Resources */ = {isa = PBXBuildFile; fileRef = B3D1CD53204725120047BA48 /* 1280px-Chick-fil-A_Logo.svg.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -226,6 +231,11 @@
 		B3B5E4312033CB5400EA5052 /* chikfilbuns3@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "chikfilbuns3@2x.png"; sourceTree = "<group>"; };
 		B3BE99E92011C78C00A6E7BB /* Screen Shot 2018-01-19 at 1.27.31 AM.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Screen Shot 2018-01-19 at 1.27.31 AM.png"; sourceTree = "<group>"; };
 		B3C0EC502019952E00AD8904 /* Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
+		B3CC3E4C204727B3006B13F8 /* 2016_TacoBellLogo_HorizontalCenter_Clr_Rev.0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 2016_TacoBellLogo_HorizontalCenter_Clr_Rev.0.png; sourceTree = "<group>"; };
+		B3CC3E4D204727B5006B13F8 /* 10995296_1713929518849797_2991002194800892706_n.0.0.png.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 10995296_1713929518849797_2991002194800892706_n.0.0.png.jpeg; sourceTree = "<group>"; };
+		B3CC3E4E204727B6006B13F8 /* Unknown */ = {isa = PBXFileReference; lastKnownFileType = file; path = Unknown; sourceTree = "<group>"; };
+		B3D1CD512047239B0047BA48 /* Humphreys-Partners-Architects-The-Standard-at-Gainesville-Exterior-Target-nltr365m2yr3qgyf1gj5sb5v6681765x8la1twt4hs.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Humphreys-Partners-Architects-The-Standard-at-Gainesville-Exterior-Target-nltr365m2yr3qgyf1gj5sb5v6681765x8la1twt4hs.jpg"; sourceTree = "<group>"; };
+		B3D1CD53204725120047BA48 /* 1280px-Chick-fil-A_Logo.svg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "1280px-Chick-fil-A_Logo.svg.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -318,6 +328,11 @@
 				B3568F732011A23F00F24AD2 /* Main.storyboard */,
 				B3BE99E92011C78C00A6E7BB /* Screen Shot 2018-01-19 at 1.27.31 AM.png */,
 				B3AECC9F2034DBDA00A28B3C /* FatBitchBin@2x.png */,
+				B3CC3E4C204727B3006B13F8 /* 2016_TacoBellLogo_HorizontalCenter_Clr_Rev.0.png */,
+				B3CC3E4D204727B5006B13F8 /* 10995296_1713929518849797_2991002194800892706_n.0.0.png.jpeg */,
+				B3CC3E4E204727B6006B13F8 /* Unknown */,
+				B3D1CD53204725120047BA48 /* 1280px-Chick-fil-A_Logo.svg.png */,
+				B3D1CD512047239B0047BA48 /* Humphreys-Partners-Architects-The-Standard-at-Gainesville-Exterior-Target-nltr365m2yr3qgyf1gj5sb5v6681765x8la1twt4hs.jpg */,
 				B3B5E4312033CB5400EA5052 /* chikfilbuns3@2x.png */,
 				B3568F792011A23F00F24AD2 /* Assets.xcassets */,
 				B310FBCB203387CF00EB4A12 /* Sides */,
@@ -566,6 +581,7 @@
 				B3AECC8F2034DBBE00A28B3C /* 6_treats.png in Resources */,
 				B310FBC4203383CD00EB4A12 /* 5_Entree.png in Resources */,
 				B3AECC7E2034DBAF00A28B3C /* Sauce_6.PNG in Resources */,
+				B3CC3E4F204727B6006B13F8 /* 2016_TacoBellLogo_HorizontalCenter_Clr_Rev.0.png in Resources */,
 				B310FBAD203383BB00EB4A12 /* 13_Breakfast.png in Resources */,
 				B3AECC832034DBAF00A28B3C /* Sauce_3.PNG in Resources */,
 				B3AECCB82034EFD500A28B3C /* 6_drinks.png in Resources */,
@@ -578,6 +594,7 @@
 				B3AECCAB2034DBDB00A28B3C /* 7_Category@2x.png in Resources */,
 				B3AECC822034DBAF00A28B3C /* Sauce_1.PNG in Resources */,
 				B310FBA8203383BB00EB4A12 /* 10_Breakfast.png in Resources */,
+				B3D1CD522047239C0047BA48 /* Humphreys-Partners-Architects-The-Standard-at-Gainesville-Exterior-Target-nltr365m2yr3qgyf1gj5sb5v6681765x8la1twt4hs.jpg in Resources */,
 				B310FBD4203387D000EB4A12 /* 4_Sides.png in Resources */,
 				B3AECC802034DBAF00A28B3C /* Sauce_5.PNG in Resources */,
 				B3AECC6C2034DB9C00A28B3C /* 3_kidsmeal.png in Resources */,
@@ -586,9 +603,12 @@
 				B310FBC0203383CD00EB4A12 /* 6_Entree.png in Resources */,
 				B3AECCA42034DBDB00A28B3C /* 1_Category@2x.png in Resources */,
 				B310FBB1203383BB00EB4A12 /* 7_Breakfast.png in Resources */,
+				B3D1CD54204725130047BA48 /* 1280px-Chick-fil-A_Logo.svg.png in Resources */,
 				B310FBAA203383BB00EB4A12 /* 6_Breakfast.png in Resources */,
 				B3AECC732034DBA600A28B3C /* 3_Salad.png in Resources */,
+				B3CC3E50204727B6006B13F8 /* 10995296_1713929518849797_2991002194800892706_n.0.0.png.jpeg in Resources */,
 				B3AECC4B2034DB8300A28B3C /* 6_dressing.png in Resources */,
+				B3CC3E51204727B6006B13F8 /* Unknown in Resources */,
 				B3AECC7F2034DBAF00A28B3C /* Sauce_7.PNG in Resources */,
 				B3AECCBC2034EFD500A28B3C /* 4_drinks.png in Resources */,
 				B310FBC6203383CD00EB4A12 /* 7_Entree.png in Resources */,
